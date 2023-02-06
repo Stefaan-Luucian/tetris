@@ -3,9 +3,31 @@ const ROWS = 20;
 const BLOCK_SIZE = 30;
 const NO_OF_HIGH_SCORES = 10;
 const HIGH_SCORES = "highScores";
-const COLORS = ["cyan", "blue", "orange", "yellow", "green", "purple", "red"];
+const COLORS = [
+  "cyan",
+  "violet",
+  "blue",
+  "orange",
+  "yellow",
+  "green",
+  "purple",
+  "red",
+  "teal",
+  "purple",
+  "aqua",
+  "black",
+  "white",
+  "olive",
+];
+console.log(COLORS.length);
 
 const SHAPES = [
+  [
+    [0, 0, 0],
+    [0, 2, 0],
+    [0, 0, 0],
+  ],
+  ,
   [
     [0, 0, 0, 0],
     [1, 1, 1, 1],
@@ -13,8 +35,19 @@ const SHAPES = [
     [0, 0, 0, 0],
   ],
   [
+    [0, 0, 0],
+    [1, 1, 1],
+    [0, 0, 0],
+    [0, 0, 0],
+  ],
+  [
     [2, 0, 0],
     [2, 2, 2],
+    [0, 0, 0],
+  ],
+  [
+    [2, 0, 0],
+    [2, 2, 0],
     [0, 0, 0],
   ],
   [
@@ -23,25 +56,53 @@ const SHAPES = [
     [0, 0, 0],
   ],
   [
+    [3, 0, 3],
+    [3, 3, 3],
+    [0, 0, 0],
+  ],
+
+  [
     [4, 4],
     [4, 4],
   ],
+  [
+    [4, 4, 0],
+    [4, 4, 0],
+    [4, 4, 0],
+  ],
+
   [
     [0, 5, 5],
     [5, 5, 0],
     [0, 0, 0],
   ],
   [
-    [0, 6, 0],
-    [6, 6, 6],
-    [0, 0, 0],
+    [0, 9, 0],
+    [9, 9, 9],
+    [0, 9, 0],
+  ],
+  [
+    [0, 2, 0],
+    [2, 2, 2],
+    [0, 2, 0],
   ],
   [
     [7, 7, 0],
     [0, 7, 7],
     [0, 0, 0],
   ],
+  [
+    [0, 9, 0],
+    [9, 9, 9],
+    [0, 0, 0],
+  ],
+  [
+    [0, 8, 0],
+    [0, 8, 0],
+    [8, 8, 8],
+  ],
 ];
+console.log(SHAPES.length);
 const POINTS = {
   SINGLE: 100,
   DOUBLE: 300,
